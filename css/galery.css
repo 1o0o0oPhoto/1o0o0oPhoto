@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  background: rgb(116,185,255);
+  background: linear-gradient(190deg, rgba(116,185,255,1) 0%, rgba(108,92,231,1) 100%);
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Dancing Script', cursive;
+}
+.title a{
+  text-decoration: none;
+}
+.title p {
+  font-size: 100px;
+  transition: 0.2s;
+  cursor: pointer;
+  color: #57606f;
+}
+.title p:hover{
+  color: #f5f6fa;
+  text-shadow: -3px 2px 0 #7f8fa6, -14px 7px 0 #2f3640;
+}
+.title hr{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  opacity: 0;
+  border: none;
+  border-radius: 25px;
+  height: 2px;
+  background-color: #2f3640;
+  transition: 0.2s;
+}
+.title p:hover + hr{
+  width: 100%;
+  opacity: 1;
+}
+
+#main_cont{
+  display: flex;
+  justify-content: center;
+}
+.content_conteiner{
+  /* width: 70%; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Dancing Script', cursive;
+}
+.content_conteiner div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.content_conteiner div img{
+  border-radius: 10px;
+  filter: grayscale(50%) blur(1.5px);
+  transition: 0.2s;
+}
+.content_conteiner div img:hover{
+  filter: grayscale(0) blur(0);
+  -webkit-box-shadow: -7px 8px 10px -1px #2F3542;
+  box-shadow: -7px 8px 10px -1px #2F3542;
+}
+.content_conteiner .intagram_link{
+  position: absolute;
+  text-decoration: none;
+  font-size: 40px;
+  opacity: 0;
+  transition: 0.2s;
+  color: black;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+.content_conteiner div img:hover + .intagram_link {
+  opacity: 1;
+}
+.content_conteiner .intagram_link:hover{
+  opacity: 1;
+  font-size: 35px;
+  width: 100px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name-of-person{
+  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'DM Mono', monospace;
+  position: absolute;
+  left: 0;
+}
+
+.personBut{
+  font-size: 50px;
+  text-decoration: none;
+  color: #2f3542;
+  margin-left: 100px;
+  transition: 0.2s;
+}
+.personBut:hover{
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+.name-of-person hr{
+  position: absolute;
+  float: left;
+  border: none;
+  border-radius: 25px;
+  height: 2px;
+  background-color: #2f3640;
+  transition: 0.2s;
+  width: 1px;
+  opacity: 0;
+}
+.personBut:hover + hr{
+  width: 100%;
+  opacity: 1;
+}
+
+@media screen and (max-device-width: 1600px) {
+    .title p{
+      font-size: 100px;
+      transition: 0.2s;
+      cursor: pointer;
+      color: #f5f6fa;
+      text-shadow: -3px 2px 0 #7f8fa6, -14px 7px 0 #2f3640;
+    }
+
+    .title hr{
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: none;
+      border-radius: 25px;
+      height: 2px;
+      background-color: #2f3640;
+      transition: 0.2s;
+      width: 100%;
+      opacity: 1;
+    }
+
+    .content_conteiner div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .content_conteiner div img{
+      border-radius: 10px;
+      filter: grayscale(65%) blur(0);
+    }
+
+    .content_conteiner .intagram_link{
+      position: absolute;
+      text-decoration: none;
+      font-size: 60px;
+      transition: 0.2s;
+      color: black;
+      text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+      opacity: 1;
+    }
+    .name-of-person{
+      font-family: 'Balsamiq Sans', cursive;
+      font-family: 'DM Mono', monospace;
+      position: relative;
+      left: 0;
+      bottom: 50px;
+    }
+    .personBut{
+      font-size: 70px;
+      text-decoration: none;
+      margin-left: 0px;
+      transition: 0.2s;
+      color: #FFFFFF;
+      text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+      text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+
+    }
+}
+
+/* @media screen and (max-device-width:450px){
+  .name-of-person{
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'DM Mono', monospace;
+    position: relative;
+    bottom: 50px;
+  }
+  .personBut{
+    font-size: 60px;
+    text-decoration: none;
+    margin-left: 0px;
+    transition: 0.2s;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+  }
+  .content_conteiner .intagram_link{
+    position: absolute;
+    text-decoration: none;
+    font-size: 60px;
+    transition: 0.2s;
+    color: black;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    opacity: 1;
+  } */
+
+}
