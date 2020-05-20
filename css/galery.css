@@ -10,16 +10,14 @@ body {
   transform: translate(-50%, -50%);
   font-family: 'Dancing Script', cursive;
 }
-.title a{
-  text-decoration: none;
-}
-.title p {
+.title a {
   font-size: 100px;
   transition: 0.2s;
   cursor: pointer;
   color: #57606f;
+  text-decoration: none;
 }
-.title p:hover{
+.title a:hover{
   color: #f5f6fa;
   text-shadow: -3px 2px 0 #7f8fa6, -14px 7px 0 #2f3640;
 }
@@ -36,7 +34,7 @@ body {
   background-color: #2f3640;
   transition: 0.2s;
 }
-.title p:hover + hr{
+.title a:hover + hr{
   width: 100%;
   opacity: 1;
 }
