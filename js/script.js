@@ -17,11 +17,11 @@ var numberImgContentContWidht;
 window.onload = function(){
 
   if (screnWidth <= 1920 && screnWidth > 1050) {
-    size = 16;
+    size = 3;
     numberImgContentContWidht = 3;
   }
   else if (screnWidth < 1050) {
-    size = 8;
+    size = 2;
     numberImgContentContWidht = 1;
   }
 
